@@ -27,10 +27,19 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         super(GlobalPlugin, self).__init__(*args, **kwargs)
         addonConfig.initialize()
         notesManager.initialize()
-        if not os.path.isdir(addonConfig.getValue("notesDocumentsPath")):
+        try:
             os.mkdir(addonConfig.getValue("notesDocumentsPath"))
-        if not os.path.isdir(TEMP_FILES_PATH):
+        except FileNotFoundError:
+            # The user has no documents directory
+            # Create the add-on documents folder in the user root folder instead
+            addonConfig.setValue("notesDocumentsPath", os.path.expanduser("~\\QuickNotetaker"))
+            os.mkdir(addonConfig.getValue("notesDocumentsPath"))
+        except FileExistsError:
+            pass
+        try:
             os.mkdir(TEMP_FILES_PATH)
+        except FileExistsError:
+            pass
         gui.settingsDialogs.NVDASettingsDialog.categoryClasses.append(
             QuickNotetakerPanel)
 
@@ -44,23 +53,23 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             os.remove(os.path.join(TEMP_FILES_PATH, file))
 
     # Translators: the name of the add-on category in input gestures
-    scriptCategory = _("Quick Notetaker")
+    scriptCategory=_("Quick Notetaker")
 
-    @script(
+    @ script(
         # Translators: the description for the command to open the notetaker dialog
         description=_("Shows the Notetaker interface for writing a new note"),
         gesture="kb:NVDA+alt+n"
     )
     def script_showNoteTakerUI(self, gesture):
-        noteTitle = None
+        noteTitle=None
         if addonConfig.getValue("captureActiveWindowTitle"):
-            noteTitle= api.getForegroundObject().name
+            noteTitle=api.getForegroundObject().name
         gui.mainFrame.prePopup()
-        dialogs.noteTakerInstance = NoteTakerDialog(noteTitle=noteTitle)
+        dialogs.noteTakerInstance=NoteTakerDialog(noteTitle=noteTitle)
         dialogs.noteTakerInstance.Show()
         gui.mainFrame.postPopup()
 
-    @script(
+    @ script(
         description=_(
             # Translators: the description for the command to open the Notes Manager
             "Shows the Notes Manager interface for viewing and managing notes"),
@@ -68,6 +77,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
     )
     def script_showNotesManagerDialogUI(self, gesture):
         gui.mainFrame.prePopup()
-        dialogs.notesManagerInstance = NotesManagerDialog()
+        dialogs.notesManagerInstance=NotesManagerDialog()
         dialogs.notesManagerInstance.Show()
         gui.mainFrame.postPopup()

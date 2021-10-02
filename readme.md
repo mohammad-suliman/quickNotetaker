@@ -1,7 +1,7 @@
 # Quick Notetaker add-on for NVDA
 
 The Quick Notetaker add-on is a wonderful tool which allows writing
-notes quickly and easily in anytime and from any app the user is using.
+notes quickly and easily anytime and from any app the user is using.
 Whether the user is watching a video for example, or participating in a
 meeting on Zoom, teams or Google meet, they can easily and smoothly open
 the notetaker and take a note. In order to create a quick note, NVDA +
