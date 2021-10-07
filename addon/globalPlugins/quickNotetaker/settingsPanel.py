@@ -1,3 +1,5 @@
+# settings.py
+# -*- coding: utf-8 -*-
 # A part from Quick Notetaker add-on
 # Copyright (C) 2021 NV Access Limited, Mohammad Suliman, Eilana Benish
 # This file is covered by the GNU General Public License.
