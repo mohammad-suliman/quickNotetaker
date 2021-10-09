@@ -8,6 +8,8 @@ Those are suggestions by users we document here. The suggestions haven't been di
 * Create a mechanism to get the page number the user was reading when they created the note. This info can be found in the status bar. Note however that each program might has a different method to obtain this data, so we need to take into consideration all popular programs and maybe handle each one separately.
 * Make the place where we save the notes themself configurable. Currently the notes are saved in NVDA's directory in app data, and the user has no option to change this. Having this option configurable will allow the user to save the notes in an online service such as One Drive or Dropbox for example, so the notes can be synced between different devices.
 * Create a mechanism to sync notes between different devices. Note that this feature will be very tricky to implement because of the complexity, and the feasibility of this as well when taking into account that NVDA may not ship with the required libraries.
+* Add support for markdown extensions, especially the popular ones such as those that support tables and checkboxes.
+* Make the label of the control to specify the place where to save the notes documents emphasize that this corresponds to the Word documents for the notes, and not the notes themself. Also we need to combine this with the option to let the user to choose where the notes themselves are stored, and to create an intuitive UX for this.
 
 ## Features we plan to investigate
 
