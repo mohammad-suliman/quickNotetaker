@@ -149,7 +149,7 @@ msgstr "נערך לאחרונה"
 
 #. Translators: the name of the third column in the notes list in Notes Manager dialog
 #: addon\globalPlugins\quickNotetaker\dialogs.py:329
-msgid "Preivew"
+msgid "Preview"
 msgstr "תצוגה מקדימה"
 
 #. Translaters: The lable of a button in Notes Manager dialog
