@@ -1,7 +1,7 @@
 # notesManager.py
 # -*- coding: utf-8 -*-
 # A part from Quick Notetaker add-on
-# Copyright (C) 2021 NV Access Limited, Mohammad Suliman, Eilana Benish
+# Copyright (C) 2022 NV Access Limited, Mohammad Suliman, Eilana Benish
 # This file is covered by the GNU General Public License.
 # See the file COPYING for more details.
 
@@ -33,7 +33,8 @@ class note(object):
             self.docxPath = docxPath
 
     def updateNote(self, newContent, docxPath):
-        if newContent is not None and self.content != newContent:
+        if newContent is not None: #and self.content != newContent:
+            # for now, allow the user to edit the content even though the content hasn't changed to be able to overcome the title bug present in the first release 
             self.title = getTitle(newContent)
             self.content = newContent
             self.lastEdited = self.prettyFormat(datetime.now())

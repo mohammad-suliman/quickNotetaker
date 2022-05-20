@@ -149,7 +149,7 @@ msgstr "上次编辑"
 
 #. Translators: the name of the third column in the notes list in Notes Manager dialog
 #: addon\globalPlugins\quickNotetaker\dialogs.py:360
-msgid "Preivew"
+msgid "Preview"
 msgstr "预览"
 
 #. Translaters: The lable of a button in Notes Manager dialog

@@ -1,11 +1,10 @@
 # helpers.py
 # -*- coding: utf-8 -*-
 # A part from Quick Notetaker add-on
-# Copyright (C) 2021 NV Access Limited, Mohammad Suliman, Eilana Benish
+# Copyright (C) 2022 NV Access Limited, Mohammad Suliman, Eilana Benish
 # This file is covered by the GNU General Public License.
 # See the file COPYING for more details.
 
-from ctypes import alignment
 from .constants import PANDOC_PATH, TEMP_FILES_PATH, DEFAULT_DOCUMENTS_PATH
 import subprocess
 import re
@@ -153,8 +152,10 @@ def handleMdContent(mdContent):
 def getTitle(mdContent):
     # Delete HTML tags if any
     mdContent = retrieveTextFromHtml(mdContent)
+    log.debug(mdContent)
     titleText = markdown(mdContent, extras=["markdown-in-html"])
     titleText = retrieveTextFromHtml(titleText)
+    log.debug(titleText)
     titleText = _removeExtraSpaces(titleText)
     lines = titleText.split("\n")
     for line in lines:
@@ -189,7 +190,7 @@ def getPreviewText(mdContent):
 
 def retrieveTextFromHtml(htmlText):
     """Returns the inner text of all HTML tags found in htmlText string"""
-    extracted = re.sub(r"(<.*?\s*?/{0,1}>\s*)+", " ", htmlText)
+    extracted = re.sub(r"(<.*?\s*?/{0,1}>)+", " ", htmlText)
     # Remove extra spaces if any
     extracted = _removeExtraSpaces(extracted)
     return extracted
