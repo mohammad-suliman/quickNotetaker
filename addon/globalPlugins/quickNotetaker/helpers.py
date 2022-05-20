@@ -152,10 +152,8 @@ def handleMdContent(mdContent):
 def getTitle(mdContent):
     # Delete HTML tags if any
     mdContent = retrieveTextFromHtml(mdContent)
-    log.debug(mdContent)
     titleText = markdown(mdContent, extras=["markdown-in-html"])
     titleText = retrieveTextFromHtml(titleText)
-    log.debug(titleText)
     titleText = _removeExtraSpaces(titleText)
     lines = titleText.split("\n")
     for line in lines:
