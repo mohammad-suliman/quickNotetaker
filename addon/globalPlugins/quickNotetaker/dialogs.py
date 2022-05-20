@@ -357,7 +357,7 @@ class NotesManagerDialog(
             # Translators: the name of the second column in the notes list in Notes Manager dialog
             1, _("Last Edited"), width=self.scaleSize(100))
         # Translators: the name of the third column in the notes list in Notes Manager dialog
-        self.notesList.InsertColumn(2, _("Preivew"), width=self.scaleSize(400))
+        self.notesList.InsertColumn(2, _("Preview"), width=self.scaleSize(400))
         self.notesList.Bind(wx.EVT_LIST_ITEM_FOCUSED, self.onListItemSelected)
 
         # this is the group of buttons that affects the currently selected note

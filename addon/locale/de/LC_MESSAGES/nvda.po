@@ -1,18 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the 'quickNotetaker' package.
+# This file is distributed under the same license as the quickNotetaker package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 'quickNotetaker' '1.0'\n"
-"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
-"POT-Creation-Date: 2021-09-21 10:40+0300\n"
+"Project-Id-Version: quickNotetaker 1.0\n"
+"Report-Msgid-Bugs-To: nvda-translations@groups.io\n"
+"POT-Creation-Date: 2022-02-02 20:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Eilana Benish <benish.ilana@gmail.com>, Mohammad Suliman <mohmad.s93@gmail.com>\n"
-"Language-Team: Eilana Benish <benish.ilana@gmail.com>, Mohammad Suliman <mohmad.s93@gmail.com\n"
-"Language: he\n"
+"Last-Translator: Benjamin Hofer <benni.hofer@gmail.com>\n"
+"Language-Team: Benjamin Hofer <benni.hofer@gmail.com>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,77 +22,76 @@ msgstr ""
 #. Add-on summary, usually the user visible name of the addon.
 #. Translators: Summary for this add-on
 #. to be shown on installation and add-on information found in Add-ons Manager.
-#: addon\globalPlugins\quickNotetaker\__init__.py:47
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:18 buildVars.py:23
+#: addon/globalPlugins/quickNotetaker/__init__.py:58
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:20 buildVars.py:23
 msgid "Quick Notetaker"
 msgstr "Quick Notetaker"
 
-#. Translators: the description for the command to open the Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\__init__.py:51
+#. Translators: the description for the command to open the notetaker dialog
+#: addon/globalPlugins/quickNotetaker/__init__.py:62
 msgid "Shows the Notetaker interface for writing a new note"
-msgstr "פתיחת הממשק לכתיבת פתק חדש"
+msgstr "Zeigt die Notizbuch-Oberfläche zum Schreiben einer neuen Notiz an"
 
 #. Translators: the description for the command to open the Notes Manager
-#: addon\globalPlugins\quickNotetaker\__init__.py:66
+#: addon/globalPlugins/quickNotetaker/__init__.py:77
 msgid "Shows the Notes Manager interface for viewing and managing notes"
-msgstr "פתיחת ממשק הצגה וניהול פתקים"
+msgstr "Zeigt die Oberfläche des Notizbuchs zum Anzeigen und Verwalten von Notizen an"
 
 #. Translators: the title for the Quick Notetaker Notetaker window
-#: addon\globalPlugins\quickNotetaker\dialogs.py:74
+#: addon/globalPlugins/quickNotetaker/dialogs.py:77
 msgid "Notetaker - Quick Notetaker"
-msgstr "עורך פתק - Quick Notetaker"
+msgstr "Notizbuch - Quick Notetaker"
 
 #. Translators: a lable of a button in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:89
+#: addon/globalPlugins/quickNotetaker/dialogs.py:92
 msgid "Open Notes &Manager..."
-msgstr "&פתח את מנהל הפתקים..."
+msgstr "Notizbuch öffnen..."
 
 #. Translators: a lable of a button in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:98
+#: addon/globalPlugins/quickNotetaker/dialogs.py:101
 msgid "P&review note..."
-msgstr "תצוגה &מקדימה של הפתק..."
+msgstr "Notizvo&rschau..."
 
 #. Translators: a lable of a button in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:101
+#: addon/globalPlugins/quickNotetaker/dialogs.py:104
 msgid "Co&py"
-msgstr "ה&עתקה"
+msgstr "Ko&pieren"
 
 #. Translators: a lable of a button in Notetaker dialog
 #. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:106
-#: addon\globalPlugins\quickNotetaker\dialogs.py:361
+#: addon/globalPlugins/quickNotetaker/dialogs.py:109
+#: addon/globalPlugins/quickNotetaker/dialogs.py:392
 msgid "Copy &HTML code"
-msgstr "העתקת &קוד HTML"
+msgstr "&HTML-Code kopieren..."
 
 #. Translators: The lable of the note content edit area in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:112
+#: addon/globalPlugins/quickNotetaker/dialogs.py:115
 msgid "&Note content:"
-msgstr "&תוכן הפתק"
+msgstr "Inhalt der &Notiz:"
 
-#. Translators: The label of the check box in Notetaker dialog when editing a note which has Word document attached to it
-#: addon\globalPlugins\quickNotetaker\dialogs.py:129
+#: addon/globalPlugins/quickNotetaker/dialogs.py:135
 msgid "Update the corresponding Microsoft &Word document also"
-msgstr "עדכן את מסמך ה Microsoft Word המק&ושר לפתק גם"
+msgstr "Auch das zugehörige Microsoft &Word-Dokument aktualisieren"
 
 #. Translators: The label of the check box in Notetaker dialog when creating a new note or when editing an existing note with no Word document attached to it
-#: addon\globalPlugins\quickNotetaker\dialogs.py:132
+#: addon/globalPlugins/quickNotetaker/dialogs.py:138
 msgid "Save as Microsoft &Word document also"
-msgstr "שמור ע&ותק כמסמך Microsoft Word גם"
+msgstr "Auch als Microsoft &Word-Dokument speichern"
 
 #. Translators: a lable of a button in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:142
+#: addon/globalPlugins/quickNotetaker/dialogs.py:148
 msgid "&Save and close"
-msgstr "&שמירה וסגירה"
+msgstr "&Speichern und schließen"
 
 #. Translators: a lable of a button in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:149
+#: addon/globalPlugins/quickNotetaker/dialogs.py:155
 msgid "&Discard"
-msgstr "&התעלם"
+msgstr "Verwerfen"
 
 #. Translators: The message which asks the user whether they want to exit and discard changes in Notetaker dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:195
+#: addon/globalPlugins/quickNotetaker/dialogs.py:200
 msgid "Are you sure you want to exit and discard changes?"
-msgstr "בטוח כי ברצונך לצאת ולהתעלם משינויים?"
+msgstr "Sind Sie sicher, dass Sie das Notizbuch schließen und Ihre Änderungen verwerfen möchten?"
 
 #. Translators: The title of the message which asks the user whether they want to exit and discard changes in Notetaker dialog
 #. Translators: the title of the message telling the user that opening Notes Manager wasn't possible
@@ -103,187 +102,201 @@ msgstr "בטוח כי ברצונך לצאת ולהתעלם משינויים?"
 #. Translators: the title of the warning messaged shown to the user when they try to delete a note from Notes Manager
 #. Translators: the title of the message telling the user that the directory they tried to save the document in is no longer available.
 #. See the message body for more details
-#: addon\globalPlugins\quickNotetaker\dialogs.py:199
-#: addon\globalPlugins\quickNotetaker\dialogs.py:221
-#: addon\globalPlugins\quickNotetaker\dialogs.py:477
-#: addon\globalPlugins\quickNotetaker\dialogs.py:501
-#: addon\globalPlugins\quickNotetaker\dialogs.py:611
-#: addon\globalPlugins\quickNotetaker\dialogs.py:624
-#: addon\globalPlugins\quickNotetaker\dialogs.py:661
+#: addon/globalPlugins/quickNotetaker/dialogs.py:202
+#: addon/globalPlugins/quickNotetaker/dialogs.py:224
+#: addon/globalPlugins/quickNotetaker/dialogs.py:482
+#: addon/globalPlugins/quickNotetaker/dialogs.py:506
+#: addon/globalPlugins/quickNotetaker/dialogs.py:609
+#: addon/globalPlugins/quickNotetaker/dialogs.py:622
+#: addon/globalPlugins/quickNotetaker/dialogs.py:659
 msgid "Warning"
-msgstr "התראה"
+msgstr "Warnung"
 
 #. Translators: the message shown to the user when opening Notes Manager is not possible because a one is already opened
-#: addon\globalPlugins\quickNotetaker\dialogs.py:219
+#: addon/globalPlugins/quickNotetaker/dialogs.py:222
 msgid "Couldn't open Notes Manager! A Notes Manager window is already opened."
-msgstr "לא היה ניתן לפתוח את מנהל הפתקים! חלון מנהל פתקים כבר פתוח."
+msgstr "Das Notizbuch konnte nicht geöffnet werden!"
 
 #. Translators: The message which tells the user that copying the note was successful
 #. Translators: the message telling the user that copying the note was successful
-#: addon\globalPlugins\quickNotetaker\dialogs.py:231
-#: addon\globalPlugins\quickNotetaker\dialogs.py:238
-#: addon\globalPlugins\quickNotetaker\dialogs.py:605
-#: addon\globalPlugins\quickNotetaker\dialogs.py:614
+#: addon/globalPlugins/quickNotetaker/dialogs.py:260
+#: addon/globalPlugins/quickNotetaker/dialogs.py:268
+#: addon/globalPlugins/quickNotetaker/dialogs.py:637
+#: addon/globalPlugins/quickNotetaker/dialogs.py:647
 msgid "Copied to clipboard!"
-msgstr "הועתק ללוח!"
+msgstr "In Zwischenablage kopiert"
 
 #. Translators: The title of the Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:296
+#: addon/globalPlugins/quickNotetaker/dialogs.py:327
 msgid "Notes Manager - Quick Notetaker"
-msgstr "מנהל הפתקים של Quick Notetaker"
+msgstr "Notizbuch - Quick Notetaker"
 
 #. Translators: the label of the notes list in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:308
+#: addon/globalPlugins/quickNotetaker/dialogs.py:339
 msgid "No&tes:"
-msgstr "&פתקים"
+msgstr "No&tizen:"
 
 #. Translators: the name of the first column in the notes list in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:324
+#: addon/globalPlugins/quickNotetaker/dialogs.py:355
 msgid "Title"
-msgstr "כותרת"
+msgstr "Titel"
 
 #. Translators: the name of the second column in the notes list in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:327
+#: addon/globalPlugins/quickNotetaker/dialogs.py:358
 msgid "Last Edited"
-msgstr "נערך לאחרונה"
+msgstr "Zuletzt geändert"
 
 #. Translators: the name of the third column in the notes list in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:329
+#: addon/globalPlugins/quickNotetaker/dialogs.py:360
 msgid "Preview"
-msgstr "תצוגה מקדימה"
+msgstr "Vorschau"
 
 #. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:337
+#: addon/globalPlugins/quickNotetaker/dialogs.py:368
 msgid "&View note..."
-msgstr "ה&צגת פתק..."
+msgstr "Notiz anzeigen.."
 
 #. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:343
+#: addon/globalPlugins/quickNotetaker/dialogs.py:374
 msgid "&Edit note..."
-msgstr "ע&ריכת פתק..."
+msgstr "Notiz b&earbeiten..."
 
 #. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:349
+#: addon/globalPlugins/quickNotetaker/dialogs.py:380
 msgid "Co&py note"
-msgstr "ה&עתקת פתק"
+msgstr "Notiz ko&pieren"
 
 #. Translaters: The lable of the open in Word button in Notes Manager dialog in case the note has a Word document attached to it
 #. Translators: the lable of the open in word button in Notes Manager dialog in case the note has a Word document attached to it
-#: addon\globalPlugins\quickNotetaker\dialogs.py:355
-#: addon\globalPlugins\quickNotetaker\dialogs.py:495
+#: addon/globalPlugins/quickNotetaker/dialogs.py:386
+#: addon/globalPlugins/quickNotetaker/dialogs.py:532
 msgid "&Open in Microsoft Word..."
-msgstr "פ&תיחה ב Microsoft Word..."
+msgstr "In Microsoft Word öffnen..."
 
 #. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:367
+#: addon/globalPlugins/quickNotetaker/dialogs.py:398
 msgid "&Delete note..."
-msgstr "&מחיקת פתק..."
+msgstr "Notiz löschen..."
 
 #. Translators: the  label of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:381
+#: addon/globalPlugins/quickNotetaker/dialogs.py:412
 msgid "&New note..."
-msgstr "פתק &חדש..."
+msgstr "&Neue Notiz..."
 
-#. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:386
+#: addon/globalPlugins/quickNotetaker/dialogs.py:418
 msgid "Open &settings..."
-msgstr "פתיחת ה&גדרות..."
+msgstr "Ein&stellungen öffnen..."
 
 #. Translaters: The lable of a button in Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:401
+#: addon/globalPlugins/quickNotetaker/dialogs.py:433
 msgid "&Close"
-msgstr "&סגירה"
-
-#. Translators: the title given to a note if it has no title
-#: addon\globalPlugins\quickNotetaker\helpers.py:128
-msgid "Untitled"
-msgstr "ללא כותרת"
+msgstr "Schließen"
 
 #. Translators: the message shown to the user when editing the note is not possible
-#: addon\globalPlugins\quickNotetaker\dialogs.py:454
+#: addon/globalPlugins/quickNotetaker/dialogs.py:480
 msgid ""
 "Couldn't edit note! An open Notetaker window with unsaved changes is present."
-msgstr "לא ניתן לערוך פתק זה! חלון עורך פתק כבר מוצג עם שינויים לא שמורים."
+msgstr ""
+"Die Notiz kann nicht bearbeitet werden, da noch ein Notizbuch mit ungespeicherten Änderungen offen ist."
 
 #. Translators: the message shown to the user when opening Notetaker is not possible because a one is already opened
-#: addon\globalPlugins\quickNotetaker\dialogs.py:499
+#: addon/globalPlugins/quickNotetaker/dialogs.py:504
 msgid "Couldn't open Notetaker! A Notetaker window is already opened."
-msgstr "לא היה ניתן לפתוח חלון עורך פתק! חלון עורך פתק כזה כבר פתוח."
+msgstr "Das Notizbuch kann nicht geöffnet werden. Es ist bereits ein Notizbuch-Fenster geöffnet."
 
 #. Translators: the lable of the open in word button in Notes Manager dialog in case the note has no Word document attached to it
-#: addon\globalPlugins\quickNotetaker\dialogs.py:498
+#: addon/globalPlugins/quickNotetaker/dialogs.py:535
 msgid "Create Microsoft &Word document"
-msgstr "יציר&ת מסמך Microsoft Word"
+msgstr "Microsoft &Word-Dokument erstellen"
 
 #. Translators: the message shown to the user when the note attached Word document is no longer available.
 #. This message is displayed when trying to open the note's Word document from the Notes Manager dialog
-#: addon\globalPlugins\quickNotetaker\dialogs.py:574
+#: addon/globalPlugins/quickNotetaker/dialogs.py:606
 msgid ""
 "A document with the specified name was not found! You can create a new one "
 "so you would be able to view this note as a Microsoft Word document."
-msgstr "מסמך בשם זה לא נמצא! ניתן ליצור מסמך חדש בכדי לצפות בפתק זה כמסמך Microsoft Word."
+msgstr ""
+"Ein Dokument mit dem angegebenen Namen wurde nicht gefunden! Sie können ein neues Dokument erstellen, "
+"und damit diese Notiz als Microsoft Word-Dokument anzeigen können."
 
 #. Translators: the warning messaged shown to the user when they try to delete a note from Notes Manager
-#: addon\globalPlugins\quickNotetaker\dialogs.py:588
+#: addon/globalPlugins/quickNotetaker/dialogs.py:620
 msgid "Are you sure you want to delete this note?"
-msgstr "בטוח כי ברצונך למחוק פתק זה?"
+msgstr "Möchten Sie diese Notiz wirklich löschen?"
 
 #. Translators: the message which tells the user that the directory they tried to save the file in is no longer available,
 #. so the file was saved in the user default one if this was possible.
 #. If not, the file was saved in the quick Notetaker directory in documents folder
-#: addon\globalPlugins\quickNotetaker\dialogs.py:658
+#: addon/globalPlugins/quickNotetaker/dialogs.py:656
 msgid ""
 "The saved path for the Microsoft Word document no longer  exists! The "
 "document was saved in the default directory for the ad-on!"
-msgstr "הנתיב של מסמך ה Microsoft Word ששמור עבור פתק זה לא קיים כבר! המסמך נשמר בתיקיית ברירת המחדל של התוסף!"
+msgstr ""
+"Der gespeicherte Pfad für das Microsoft Word-Dokument existiert nicht mehr! Das "
+"Dokument wurde im Standardverzeichnis für das Add-On gespeichert!"
 
 #. Translators: The title of the dialog which allows the user to choose the folder where they want to save the note's corresponding Word document.
 #. This dialog is displayed to the user if the option of "Ask me each time where to save the note's corresponding Word document" in quick Notetaker settings is checked
-#: addon\globalPlugins\quickNotetaker\dialogs.py:634
+#: addon/globalPlugins/quickNotetaker/dialogs.py:667
 msgid "Select the folder where the document will be saved"
-msgstr "בחר את התיקייה שבה ישמר המסמך"
+msgstr "Wählen Sie das Verzeichnis aus, in dem das Dokument gespeichert werden   soll"
+
+#. Translators: the title given to a note if it has no title
+#: addon/globalPlugins/quickNotetaker/helpers.py:165
+msgid "Untitled"
+msgstr "Unbenannt"
 
 #. Translators: the label of the control in Quick Notetaker settings panel for choosing a default folder where the add-on documents will be saved
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:23
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:25
 msgid "Default documents directory:"
-msgstr "תיקיית ברירת המחדל של המסמכים:"
+msgstr "Standardverzeichnis für Dokumente:"
 
 #. Translators: the label of a button to browse for a directory
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:30
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:32
 msgid "Browse..."
-msgstr "עיון..."
+msgstr "Durchsuchen..."
 
-#. Translators: The title of the dialog presented when browsing for the directory where quick Notetaker documents will be stored
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:33
+#. Translators: The title of the dialog presented when browsing for the directory where quick notetaker documents will be stored
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:35
 msgid ""
 "Select a default directory where the documents of Quick Notetaker will be "
 "stored"
-msgstr "בחר את תיקיית ברירת המחדל שבה ישמרו המסמכים של Quick Notetaker"
+msgstr ""
+"Wählen Sie ein Standardverzeichnis, in dem die Dokumente von Quick Notetaker "
+"gespeichert werden"
 
 #. Translators: the label of a check box in Quick Notetaker settings panel
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:42
-msgid "Ask me each time &where to save the note's corresponding Microsoft Word document"
-msgstr "שאל אותי כל פעם &היכן לשמור את מסמך ה Microsoft Word המקושר לפתק"
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:44
+msgid ""
+"Ask me each time &where to save the note's corresponding Microsoft Word "
+"document"
+msgstr ""
+"Immer fragen, &wo das entsprechende Microsoft Word-Dokument der Notiz gespeichert "
+"werden soll"
 
 #. Translators: the label of a check box in Quick Notetaker settings panel
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:49
-msgid "&Open the note's corresponding Microsoft Word document after saving or updating"
-msgstr "&פתח את מסמך ה Microsoft Word המקושר לפתק אחרי פעולת שמירה או עדכון"
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:51
+msgid ""
+"&Open the note's corresponding Microsoft Word document after saving or "
+"updating"
+msgstr ""
+"Das Microsoft Word-Dokument nach dem Speichern oder Aktualisieren der " 
+"Notiz öffnen"
 
 #. Translators: the label of a check box in Quick Notetaker settings panel
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:56
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:58
 msgid "&Capture the active window title when creating a new note"
-msgstr "ה&שתמש בכותרת החלון הפעיל ככותרת הפתק בעת יצירת פתק חדש"
+msgstr "Beim Erstellen einer neuen Notiz den aktuellen Fenstertitel als Name verwenden"
 
 #. Translators: the label of a check box in Quick Notetaker settings panel
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:63
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:65
 msgid "&Remember the note taker window size and position"
-msgstr "&זכור את גודל ומיקום החלון של עורך פתק"
+msgstr "Fenstergröße und -position für das Notizbuch-Fenster beibehalten"
 
 #. Translators: the label of a check box in Quick Notetaker settings panel
-#: addon\globalPlugins\quickNotetaker\settingsPanel.py:70
+#: addon/globalPlugins/quickNotetaker/settingsPanel.py:72
 msgid "Au&to align text when editing notes (relevant for RTL languages)"
-msgstr "יישור טקסט באופן או&טומטי בעת ערכת פתק (רלוונטי עבור שפות מימין לשמאל)"
+msgstr "Au&tomatisches Au&srichten von Text beim Bearbeiten von Notizen (relevant für RTL-Sprachen)"
 
 #. Add-on description
 #. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
@@ -291,4 +304,6 @@ msgstr "יישור טקסט באופן או&טומטי בעת ערכת פתק (�
 msgid ""
 "A note taker for NVDA. Allows the user to create, edit, view, manage and "
 "export notes to different formats."
-msgstr "עורך הפתקים ל NVDA. מאפשר יצירה, עריכה, צפייה, ניהול ויצוא ההערות לפורמטים שונים."
+msgstr ""
+"Ein Notizbuch für NVDA. Ermöglicht dem Benutzer das Erstellen, Bearbeiten, Anzeigen, Verwalten und "
+"Exportieren von Notizen."
