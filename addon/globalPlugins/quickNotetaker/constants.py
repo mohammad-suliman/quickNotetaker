@@ -24,10 +24,10 @@ DATA_DIR_PATH = os.path.join(CONFIG_PATH, "Quick Notetaker data")
 DATA_FILE_PATH = os.path.join(DATA_DIR_PATH, "notes.json")
 
 PANDOC_PATH = os.path.join(
-    QUICK_NOTETAKER_PATH, "quickNotetaker", "lib", "pandoc-2.14.2", "pandoc")
+    QUICK_NOTETAKER_PATH, "quickNotetaker", "lib", "pandoc-3.1.2", "pandoc")
 
 PANDOC_PATH_DEV = os.path.join(
-    QUICK_NOTETAKER_PATH_DEV, "lib", "pandoc-2.14.2", "pandoc")
+    QUICK_NOTETAKER_PATH_DEV, "lib", "pandoc-3.1.2", "pandoc")
 
 # Remember to comment out in production
 # PANDOC_PATH = PANDOC_PATH_DEV
